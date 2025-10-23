@@ -1,0 +1,38 @@
+html body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(75, 77, 82);
+    color: aliceblue;
+}
+
+
+
+.cardSpace{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+   background-color: antiquewhite;
+   color: black;
+    border-radius: 10px;
+   margin: 30px;
+   padding: 10px;
+}ñ
+
+.card p{
+
+}
+
+
+.card img{
+    width: 100px;
+    height: 100px;
+}
+
+a:hover{
+    color: red;
+}
+a{
+    color: black;
+}

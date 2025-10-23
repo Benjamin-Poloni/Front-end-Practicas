@@ -1,5 +1,9 @@
 import { cards } from "./eventCardArray.js";
 
+document.addEventListener('DOMContentLoaded', () => {
+  cardGenerator();
+});
+
 
 export function cardGenerator() {
   const container = document.getElementById('cardSpace');
@@ -19,6 +23,7 @@ export function cardGenerator() {
     el.className = 'card';
     el.innerHTML = `
       <h3>${card.nombre}</h3>
+      <img src="./src/fotoVacia.jpg" alt="la foto esta rota">
       <p><strong>Lugar:</strong> ${card.place}</p>
       <p><strong>Fecha:</strong> ${card.fecha}</p>
       <button class="btn-delete">Eliminar</button>
@@ -27,9 +32,7 @@ export function cardGenerator() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  cardGenerator();
-});
+
 
 
 
