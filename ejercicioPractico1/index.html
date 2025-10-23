@@ -5,33 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Esta es una app que sirve para crear eventos personalizados por cada usuario">
     <link rel="shortcut icon" href="src/2472300.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>App de Eventos </title>
-
+    
 </head>
 <body>
 
-    <head>
+    <header>
         <nav>
 
         </nav>
-    </head>
+    </header>
 
     <section id="eventosDisponibles"> 
         <h1>
         Eventos disponibles
-        </h1>
+        </h1>   
+            <div id="cardSpace">
+
+            </div>
     </section>
 
-
+<main>
     <section id="addEvents">
+        <h3>Crear nuevo evento</h3>
         <form action="">
-            <input type="text" placeholder="Fiesta privada">
-            <input type="text" placeholder="Invencion ocampo 1734">
-            <input type="date" name="" id="">
-            <input type="button" value="Agregar">
+            <input type="text" placeholder="Fiesta privada" id="cardName">
+            <input type="text" placeholder="Invencion ocampo 1734" id="cardLocation">
+            <input type="date" name="" id="cardTime">
+            <input type="button" value="Agregar" id="addCardButton">
         </form>
     </section>
-
+</main>
     <footer>
         <p>
             Creado por Benjamin Poloni.
@@ -43,5 +48,11 @@
         </p>
     </footer>
     
+
+
+
+
+    <script type="module" src="scripts/eventCardArray.js" ></script>
+    <script type="module" src="scripts/eventCardGenerator.js" ></script>
 </body>
 </html>
