@@ -10,7 +10,7 @@ export function cardGenerator() {
 
   // limpiar el contenedor
   container.innerHTML = '';
-
+  // se limpia el contenedor cada vez que se ejecuta la funcion porque sino se mostrarian cards repetidas
  
   if (cards.length === 0) {
     container.innerHTML = '<p>No hay eventos aún</p>';
