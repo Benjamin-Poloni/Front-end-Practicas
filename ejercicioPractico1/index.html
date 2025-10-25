@@ -13,6 +13,16 @@
 
     <header>
         <nav>
+            <ul>
+                <li>
+                <a href="#eventosDisponibles">Eventos disponibles </a>
+                </li>
+                <li>
+                <a href="#addEvents">Agregar nuevos eventos</a>
+                </li>
+            </ul>
+            
+            
         </nav>
     </header>
 
@@ -23,8 +33,15 @@
             <div id="cardSpace" class="cardSpace">
            
             </div>
+<article class="card">
+      <h3>${card.nombre}</h3>
+      <img src="./src/fotoVacia.jpg" alt="la foto esta rota">
+      <p><strong>Lugar:</strong> ${card.place}</p>
+      <p><strong>Fecha:</strong> ${card.fecha}</p>
+      <button class="btn-delete">Eliminar</button>
+</article>
     </section>
-
+  <hr>
 <main>
     <section id="addEvents">
         <h3>Crear nuevo evento</h3>
@@ -42,9 +59,10 @@
             2025
         </p>
 
-        <p><a href="https://www.linkedin.com/in/benjamin-poloni">Linkedin Profile</a> 
-        <a href="https://github.com/Benjamin-Poloni">GitHub profile</a>
-        </p>
+        
+        <a  href="https://www.linkedin.com/in/benjamin-poloni"><img class="icon" src="src/linkedin.png" alt=""></a> 
+        <a  href="https://github.com/Benjamin-Poloni"><img class="icon" src="src/github.png" alt=""></a>
+        
          
     </footer>
     

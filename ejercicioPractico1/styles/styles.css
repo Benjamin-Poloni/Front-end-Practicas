@@ -1,38 +1,124 @@
-html body{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(75, 77, 82);
-    color: aliceblue;
+:root{
+    --backgroud-color: #1E1E2E;
+    --font-color: #FFFFFF;
+    --btn-color:  rgb(31, 98, 76);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html{
+    scroll-behavior: smooth;
+}
+
+html body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--backgroud-color);
+    color: var(--font-color);
+    min-height: 100vh;
+    
+    
+}
+
+body{
+   
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main{
+    flex: 1;
+}
 
 .cardSpace{
-    display: flex;
-    flex-wrap: wrap;
+   
 }
 
 .card{
-   background-color: antiquewhite;
-   color: black;
-    border-radius: 10px;
-   margin: 30px;
-   padding: 10px;
-}ñ
-
-.card p{
-
+    margin: 10px;
+    padding: 5px;
+    flex-wrap: nowrap;
+    width: 14em;
+    background-color: #313244;
+    border-radius: 12px;
+    display: inline-block;
+    text-align: center;
 }
 
 
 .card img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
 }
 
-a:hover{
-    color: red;
+
+.card p{
+    text-align: left;
 }
-a{
+
+
+.icon{
+    height: 2rem;
+    width: 2rem;
+}
+
+
+.btn-delete{
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+    height: 1.8rem;
+    width: 4rem;
+    color: var(--btn-color);
+}
+
+
+#addEvents{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #313244;
+    border-radius: 10px;
+    display: block;
+}
+
+#addEvents form input{
+    padding-left: 0.5rem;
+    border-radius: 10px;
+    height: 1.8rem;
+    width: 10rem;
+   
+}
+
+
+#addCardButton{
+    padding-left: 0;
+    color: var(--btn-color);
+}
+
+footer{
+    padding: 0.4em;
     color: black;
+    background-color: white;
+}
+
+
+footer img{
+    float: right;
+}
+
+
+
+footer p {
+    display: inline-block;
+    text-align: left;
+}
+
+
+
+nav a{
+
 }
